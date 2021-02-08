@@ -4,7 +4,6 @@ import numpy as np
 
 int_type = [torch.uint8, torch.int8, torch.int16, torch.short, torch.int32, torch.int, torch.int64, torch.long]
 
-
 def get_offset(tensor):
     """
     A function to return the offset if input has negative value.
