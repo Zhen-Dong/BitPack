@@ -30,7 +30,7 @@ cd bitpack
 python bitpack_utils.py
 ```
 
-### Results of BitPack
+### Results of BitPack on ResNet50
 Original Precision | Quantization | Original Size(MB) | Packed Size(MB) | Compression Ratio
 ---|----|---|---|---
 Floating Point | Mixed-Precision(4bit/8bit) | 102 | 13.8 | 7.4x
