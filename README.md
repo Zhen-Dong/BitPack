@@ -24,10 +24,15 @@ export CUDA_VISIBLE_DEVICES=0
 python pack.py --input-int-file quantized_checkpoint.pth.tar --force-pack-fp
 python unpack.py --input-packed-file packed_quantized_checkpoint.pth.tar --original-int-file quantized_checkpoint.pth.tar
 ```
+To get a better sense of how BitPack works, we provide a simple test that compares the original tensor, the packed tensor, and the unpacked tensor in details.
+```
+cd bitpack
+python bitpack_utils.py
+```
 
 ### Results of BitPack
 Original Precision | Quantization | Original Size(MB) | Packed Size(MB) | Compression Ratio
----|---|---|---|---
+---|----|---|---|---
 Floating Point | Mixed-Precision(4bit/8bit) | 102 | 13.8 | 7.4x
 8-bit | Mixed-Precision(2bit/8bit)          | 26  | 7.9  | 3.3x
 
