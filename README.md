@@ -47,4 +47,5 @@ Floating Point | Mixed-Precision(4bit/8bit) | 102 | 13.8 | 7.4x
 * unpack.py can be used for checking correctness. It loads and unpacks the packed model, and then compares it with the original model.
 
 ## License
+THIS SOFTWARE AND/OR DATA WAS DEPOSITED IN THE BAIR OPEN RESEARCH COMMONS REPOSITORY ON Feb 1, 2023.
 BitPack is released under the [MIT license](LICENSE).
